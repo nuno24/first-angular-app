@@ -1,0 +1,10 @@
+@if(username()) {
+  <h1>User name is : {{username()}}</h1>
+} @else {
+  <h1>No user name yet!</h1>
+}
+
+<form (ngSubmit)="updateName($event)">
+  <input [(ngModel)]="inputValue" name="username"/>
+  <button type="submit">Update User name</button>
+</form>
