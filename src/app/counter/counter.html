@@ -1,0 +1,10 @@
+<h1>Counter</h1>
+
+<h2>The count is: {{count()}}!</h2>
+@if(count() > 0) {
+  <p>Count is positive</p>
+} @else {
+  <p>Count is negative</p>
+}
+<button (click)="addCount()">+1</button>
+<button (click)="subtractCount()">-1</button>
